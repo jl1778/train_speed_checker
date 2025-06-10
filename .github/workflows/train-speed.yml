@@ -30,6 +30,6 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add circuit_rolling_averages.json
-          git commit -m "Update circuit rolling averages"
+          git add circuit_rolling_averages.json last_positions.json
+          git commit -m "Update circuit and position data" || echo "No changes to commit"
           git push
